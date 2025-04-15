@@ -92,7 +92,7 @@ export default function Home() {
                         </p>
                         <p className="leading-relaxed font-bold text-center">
                             Everyday at 9:00 pm check in at 8:30 pm | Adults: $25 plus tax | Children 12 and under $15 plus tax
-                            <br />
+                            </p>
                             <br />
                             <p className="leading-relaxed mb-4">
                                 November and December start times are 7:00 pm with 6:30 check in, Closed January and February.   
@@ -116,7 +116,7 @@ export default function Home() {
                             >
                                 BOOK NOW
                             </button>
-                        </p>
+                       
                     </div>
                 </div>
 
