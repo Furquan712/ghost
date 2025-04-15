@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* Container sets up the perspective for 3D effect */
+.tab-content-container {
+  perspective: 1200px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* The content will pivot from its left edge for a book-like flip */
+.tab-content {
+  transform-origin: left;
+  backface-visibility: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Entering Animation - New page flips in from the right side */
+.flip-page-enter {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+.flip-page-enter-active {
+  transform: rotateY(0deg);
+  opacity: 1;
+  transition: transform 1900ms ease-in-out, opacity 1900ms ease-in-out;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Exiting Animation - Current page flips out to the left */
+.flip-page-exit {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+.flip-page-exit-active {
+  transform: rotateY(-180deg);
+  opacity: 0;
+  transition: transform 1900ms ease-in-out, opacity 1900ms ease-in-out;
 }
