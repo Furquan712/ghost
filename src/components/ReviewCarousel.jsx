@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const reviews = [
   {
@@ -115,12 +115,40 @@ const reviews = [
 ];
 
 export default function ReviewCarousel() {
+  // State for current starting index and modal
   const [currentIndex, setCurrentIndex] = useState(0);
   const [modalContent, setModalContent] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  // New state to track how many items per view should be visible
+  const [itemsPerPage, setItemsPerPage] = useState(3);
 
+  // Update itemsPerPage based on window width
+  useEffect(() => {
+    function updateItemsPerPage() {
+      const width = window.innerWidth;
+      if (width < 640) {
+        // Mobile: 1 card per view
+        setItemsPerPage(1);
+      } else if (width < 1024) {
+        // Tablet: 2 cards per view
+        setItemsPerPage(2);
+      } else {
+        // Desktop: 3 cards per view
+        setItemsPerPage(3);
+      }
+      // Reset currentIndex in case the new maxIndex is lower than before
+      setCurrentIndex(0);
+    }
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
+
+  // Calculate maximum index based on itemsPerPage
+  const maxIndex = reviews.length - itemsPerPage;
+
+  // Adjust slide function to use itemsPerPage for boundaries and translate percentage
   const slide = (direction) => {
-    const maxIndex = reviews.length - 3;
     setCurrentIndex((prevIndex) =>
       Math.min(Math.max(prevIndex + direction, 0), maxIndex)
     );
@@ -147,12 +175,13 @@ export default function ReviewCarousel() {
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-300 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+          style={{ transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)` }}
         >
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md mx-2 p-5 min-w-[33.33%] box-border transform transition duration-300 hover:scale-105 custom-3d"
+              style={{ minWidth: `${100 / itemsPerPage}%` }}
+              className="bg-white rounded-xl shadow-md mx-2 p-5 box-border transform transition duration-300 hover:scale-105 custom-3d"
             >
               <h3 className="text-lg font-bold">{review.name}</h3>
               <small className="text-gray-500">{review.date}</small>

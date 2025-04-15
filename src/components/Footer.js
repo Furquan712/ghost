@@ -62,7 +62,7 @@ export default function Footer() {
               <button
                 type="button"
                 className="
-                  inline-block bg-red-700 hover:bg-red-800 text-white
+                  inline-block bg-[#800] hover:bg-red-800 text-white
                   py-2 px-5 rounded shadow-md transition-colors mb-4
                 "
               >

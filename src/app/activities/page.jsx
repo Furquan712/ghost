@@ -8,9 +8,12 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
         "
       >
         {/* Page Title */}
-        <h1 className="text-center text-3xl md:text-4xl font-bold mb-10">
+        <h1 className="text-center text-3xl md:text-4xl font-bold mb-4">
           Ghost and Haunt Tours of Gatlinburg
         </h1>
+        <p className="text-center mr-6 ml-6 mb-10">
+        Experience a spine-chilling journey through Gatlinburg's storied past, where mysterious legends and ghostly whispers linger in every historic corner. Traverse shadow-drenched alleyways, haunted cabins, and eerie landmarks. Our tours ignite your imagination, blending fact with folklore for an unforgettable paranormal adventure that beckons believers and skeptics alike in every moment.
+        </p>
   
         {/* Cards Container */}
         <div className="max-w-6xl mx-auto px-4">
@@ -19,7 +22,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
             {/* Card 1 */}
             <div
               className="
-                bg-white/80 
+                bg-yellow-100
                 rounded 
                 shadow-lg 
                 p-6 
@@ -46,7 +49,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               </p>
               <button
                 className="
-                  bg-red-700 
+                  bg-[#800]
                   text-white 
                   px-4 
                   py-2 
@@ -63,7 +66,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
             {/* Card 2 */}
             <div
               className="
-                bg-white/80 
+                bg-yellow-100 
                 rounded 
                 shadow-lg 
                 p-6 
@@ -90,7 +93,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               </p>
               <button
                 className="
-                  bg-red-700 
+                  bg-[#800]
                   text-white 
                   px-4 
                   py-2 
@@ -110,7 +113,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
             {/* Card 3 */}
             <div
               className="
-                bg-white/80 
+                bg-yellow-100 
                 rounded 
                 shadow-lg 
                 p-6 
@@ -137,7 +140,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               </p>
               <button
                 className="
-                  bg-red-700 
+                  bg-[#800]
                   text-white 
                   px-4 
                   py-2 
@@ -154,7 +157,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
             {/* Card 4 */}
             <div
               className="
-                bg-white/80 
+                bg-yellow-100 
                 rounded 
                 shadow-lg 
                 p-6 
@@ -181,7 +184,7 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               </p>
               <button
                 className="
-                  bg-red-700 
+                  bg-[#800]
                   text-white 
                   px-4 
                   py-2 
