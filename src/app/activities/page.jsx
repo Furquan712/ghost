@@ -34,9 +34,9 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               "
             >
               <img
-                src="https://via.placeholder.com/500x300?text=Titanic+%21+Dinner+and+Investigation"
+                src="https://www.dev.causalfunnels.com/wp-content/uploads/2025/04/672e5f8bf03012a76806fff1_large.jpg"
                 alt="Titanic Dinner and Investigation"
-                className="w-full h-auto object-cover rounded mb-4"
+                className="w-3/4 h-auto object-cover rounded mb-4"
               />
               <h2 className="text-xl font-semibold mb-2 text-center">
                 TITANIC! Dinner and Investigation.
@@ -78,9 +78,9 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               "
             >
               <img
-                src="https://via.placeholder.com/500x300?text=Titanic+Investigation+Only"
+                src="https://www.dev.causalfunnels.com/wp-content/uploads/2025/04/672e637826ac8f0f6d0dd48a_large.jpg"
                 alt="Titanic Investigation Only"
-                className="w-full h-auto object-cover rounded mb-4"
+                className="w-3/4 h-auto object-cover rounded mb-4"
               />
               <h2 className="text-xl font-semibold mb-2 text-center">
                 TITANIC! Investigation only
@@ -125,9 +125,9 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               "
             >
               <img
-                src="https://via.placeholder.com/500x300?text=Haunted+Silhouette"
+                src="https://www.dev.causalfunnels.com/wp-content/uploads/2025/04/570721cd9267050a3a8b45a2_large.jpg"
                 alt="Haunted Silhouette"
-                className="w-full h-auto object-cover rounded mb-4"
+                className="w-3/4 h-auto object-cover rounded mb-4"
               />
               <h2 className="text-xl font-semibold mb-2 text-center">
                 Thrilling Night Walk
@@ -169,9 +169,9 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               "
             >
               <img
-                src="https://via.placeholder.com/500x300?text=Ghost+and+Haunt"
+                src="https://www.dev.causalfunnels.com/wp-content/uploads/2025/04/5c950b89477110d5338b4a35_large.jpg"
                 alt="Ghost and Haunt"
-                className="w-full h-auto object-cover rounded mb-4"
+                className="w-3/4 h-auto object-cover rounded mb-4"
               />
               <h2 className="text-xl font-semibold mb-2 text-center">
                 Ghost and Haunt Special

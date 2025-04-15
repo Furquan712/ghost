@@ -31,5 +31,17 @@
 .flip-page-exit-active {
   transform: rotateY(-180deg);
   opacity: 0;
-  transition: transform 1900ms ease-in-out, opacity 1900ms ease-in-out;
+  transition: transform 1900ms ease-in-out, opacity 1000ms ease-in-out;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+  color: #800;
+}
+
+h3 {
+  color: #800;
 }
