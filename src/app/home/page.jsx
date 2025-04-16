@@ -32,7 +32,7 @@ export default function Home() {
         “T-Shirts” and “NEW! Investigative Ghost Tour” SECTION
         On wider screens, display side by side.
       */}
-            <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0 border-t border-b p-4">
+            <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0 border-t border-b p-2">
                 {/* LEFT COLUMN */}
                 <div className="pr-4 lg:border-r-2">
                     <div>
