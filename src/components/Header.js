@@ -3,10 +3,10 @@ export default function Header() {
     return (
       <header
         className="
-          bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/paper-header-1.png')]
+          bg-[url('/paper-header-1.png')]
           bg-cover bg-center
           text-[#3B2712] font-serif
-          ml-[10%] mt-[10%] mr-[10%]
+          ml-[15%] mt-[10%] mr-[15%]
           py-4
         "
       >

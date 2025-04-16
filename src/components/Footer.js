@@ -1,14 +1,17 @@
+import Link from "next/link";
+
 // app/Footer.js (or wherever you store your components)
 export default function Footer() {
     return (
-      <footer
+        <>
+              <footer
         className="
-          bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/bird-paper2.png')]
+          bg-[url('/main-bg.png')]
           bg-cover bg-center 
           text-[#3B2712] font-serif
-          ml-[10%] mb-[10%] mr-[10%]
+          ml-[15%] mr-[15%]
 
-          py-20
+          p-10
         "
       >
         <div className="max-w-7xl mx-auto px-4">
@@ -16,7 +19,11 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Left Column: "Schedule a Tour" */}
             <div>
-              <h2 className="text-3xl font-bold mb-4">SCHEDULE A TOUR</h2>
+            <img
+                  src="/footer-hand.png"
+                  alt="Raven Illustration"
+                  className="w-full h-auto"
+                />
               <p className="mb-4 leading-relaxed">
                 What secrets lie beyond the pretty shops and the main streets in Gatlinburg? 
                 Step into the past with the Ghost and Haunt Tour of Gatlinburg!
@@ -47,54 +54,88 @@ export default function Footer() {
             <div>
               <h2 className="text-3xl font-bold mb-4">Enjoyed your tour? Leave us a review!</h2>
               <p className="mb-4 leading-relaxed">
-                If you enjoyed your experience on the tour, please leave us a review on TripAdvisor!
-                We greatly value your feedback and appreciate hearing your thoughts. 
-                Have suggestions on making the tour even better? 
-                Email us directly at{" "}
+              If you enjoyed your experience on the tour, please leave us a review on Trip Advisor! We try very hard to give all our customers as enjoyable an experience as possible and we would love it if you share that. Have suggestions on making the tour even better? Email us directly at {" "}
                 <a
-                  href="mailto:ghostwalksanta@example.com"
+                  href="mailto:ghostwalksanta@gmail.com"
                   className="underline hover:text-red-800 transition-colors"
                 >
-                  ghostwalksanta@example.com
+                  ghostwalksanta@gmail.com
                 </a>.
               </p>
+              <h2 className="text-2xl font-bold mb-4">BOOK ONLINE - IF YOU DARE!</h2>
   
-              <button
+              <Link
                 type="button"
+                href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
                 className="
                   inline-block bg-[#800] hover:bg-red-800 text-white
                   py-2 px-5 rounded shadow-md transition-colors mb-4
                 "
               >
                 BOOK NOW
-              </button>
-  
-              {/* Optional image (e.g., a crow or raven in the bottom corner) */}
-              <div className="mt-4">
-                <img
-                  src="https://via.placeholder.com/80x80.png?text=Raven"
-                  alt="Raven Illustration"
-                  className="w-16 h-auto"
-                />
-              </div>
+              </Link>
             </div>
           </div>
   
+        </div>
+      </footer>
+      <footer
+        className="
+          bg-[url('/bird-paper2.png')]
+          bg-cover bg-center 
+          text-[#3B2712] font-serif
+          ml-[15%] mb-[15%] mr-[15%]  pb-10
+        "
+      >
+        <div className="max-w-5xl">
+  
           {/* Bottom Center FAQ Button */}
+          <div className="container mx-auto flex flex-col items-center justify-center gap-4">
+    {/* Raven Image */}
+    <div className="flex mt-6">
+      <img
+        src="http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/Screenshot-2025-04-10-002819.png"
+        alt="Raven"
+        className="w-100 h-auto"
+      />
+    </div>
+    {/* Navigation */}
+    <nav>
+      <ul className="flex items-center gap-4 text-lg font-semibold">
+        <li>
+          <a href="" className="hover:underline">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:underline">
+            Our Stories
+          </a>
+        </li>
+        <li>
+          <a href="/activities" className="hover:underline">
+            Activities
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
           <div className="flex justify-center mt-8">
-            <button
+            <Link
               type="button"
+              href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
               className="
                 bg-yellow-500 hover:bg-yellow-600 text-[#3B2712]
                 px-6 py-2 rounded shadow-md transition-colors
-                text-lg font-semibold
+                text-lg font-semibold xola-checkout
               "
             >
               Click Here For Frequently Asked Questions
-            </button>
+            </Link>
           </div>
         </div>
       </footer>
+        </>
     );
   }
   

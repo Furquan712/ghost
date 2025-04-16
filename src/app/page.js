@@ -28,22 +28,22 @@ export default function Header() {
     <>
       <header
         className="
-          bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/paper-header-1.png')]
+          bg-[url('/paper-header-1.png')]
           bg-cover bg-center
           text-[#3B2712] font-serif
-          ml-[10%] mt-[10%] mr-[10%]
+          ml-[15%] mt-[5%] mr-[15%]
           py-4
         "
       >
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           {/* Top row: Raven + Title + Nav */}
           <div className="container mx-auto flex flex-col items-center justify-center gap-4">
             {/* Raven Image */}
-            <div className="flex mt-6">
+            <div className="flex mt-2">
               <img
                 src="http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/Screenshot-2025-04-10-002819.png"
                 alt="Raven"
-                className="w-150 h-auto"
+                className="w-100 h-auto"
               />
             </div>
             {/* Navigation */}

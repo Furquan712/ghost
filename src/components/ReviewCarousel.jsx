@@ -181,7 +181,7 @@ export default function ReviewCarousel() {
             <div
               key={index}
               style={{ minWidth: `${100 / itemsPerPage}%` }}
-              className="bg-white rounded-xl shadow-md mx-2 p-5 box-border transform transition duration-300 hover:scale-105 custom-3d"
+              className=" rounded-lg shadow-2xl mx-2 p-5 box-border transform transition duration-300 hover:scale-105 custom-3d"
             >
               <h3 className="text-lg font-bold">{review.name}</h3>
               <small className="text-gray-500">{review.date}</small>
@@ -211,7 +211,7 @@ export default function ReviewCarousel() {
           onClick={closeModal}
         >
           <div
-            className="bg-white rounded-xl p-5 max-w-lg max-h-[80vh] overflow-y-auto relative"
+            className="rounded-xl p-5 max-w-lg max-h-[80vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <span

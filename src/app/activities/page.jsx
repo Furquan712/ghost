@@ -1,9 +1,11 @@
 // app/page.js
+import Link from "next/link";
+
 export default function Activities() {
     return (
       <main
         className="
-ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/main-bg.png')] 
+ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
                      bg-cover bg-center p-8 space-y-8 text-[#3B2712] font-serif
         "
       >
@@ -47,20 +49,16 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               <p className="text-center mb-4">
                 Enjoy a unique dinner experience aboard the world-famous Titanic and join our special investigation.
               </p>
-              <button
+              <Link
+                type="button"
+                href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
                 className="
-                  bg-[#800]
-                  text-white 
-                  px-4 
-                  py-2 
-                  rounded 
-                  hover:bg-red-800 
-                  transition-colors 
-                  duration-300
+                  inline-block bg-[#800] hover:bg-red-800 text-white
+                  py-2 px-5 rounded shadow-md transition-colors mb-4
                 "
               >
                 BOOK NOW
-              </button>
+              </Link>
             </div>
   
             {/* Card 2 */}
@@ -91,20 +89,16 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               <p className="text-center mb-4">
                 Take part in a guided investigation with real equipment—no dinner, all thrills.
               </p>
-              <button
+              <Link
+                type="button"
+                href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
                 className="
-                  bg-[#800]
-                  text-white 
-                  px-4 
-                  py-2 
-                  rounded 
-                  hover:bg-red-800 
-                  transition-colors 
-                  duration-300
+                  inline-block bg-[#800] hover:bg-red-800 text-white
+                  py-2 px-5 rounded shadow-md transition-colors mb-4
                 "
               >
                 BOOK NOW
-              </button>
+              </Link>
             </div>
           </div>
   
@@ -138,20 +132,16 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               <p className="text-center mb-4">
                 Experience the eerie streets by moonlight with ghostly stories at every turn.
               </p>
-              <button
+              <Link
+                type="button"
+                href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
                 className="
-                  bg-[#800]
-                  text-white 
-                  px-4 
-                  py-2 
-                  rounded 
-                  hover:bg-red-800 
-                  transition-colors 
-                  duration-300
+                  inline-block bg-[#800] hover:bg-red-800 text-white
+                  py-2 px-5 rounded shadow-md transition-colors mb-4
                 "
               >
                 BOOK NOW
-              </button>
+              </Link>
             </div>
   
             {/* Card 4 */}
@@ -182,20 +172,16 @@ ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2
               <p className="text-center mb-4">
                 Dive deep into Gatlinburg’s haunted history with our longest-running ghost tour.
               </p>
-              <button
+              <Link
+                type="button"
+                href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
                 className="
-                  bg-[#800]
-                  text-white 
-                  px-4 
-                  py-2 
-                  rounded 
-                  hover:bg-red-800 
-                  transition-colors 
-                  duration-300
+                  inline-block bg-[#800] hover:bg-red-800 text-white
+                  py-2 px-5 rounded shadow-md transition-colors mb-4
                 "
               >
                 BOOK NOW
-              </button>
+              </Link>
             </div>
           </div>
         </div>

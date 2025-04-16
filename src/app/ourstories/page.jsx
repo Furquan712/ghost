@@ -24,7 +24,7 @@ const OurStories = () => {
   }, [galleryItems]);
 
   return (
-    <main className="p-10 ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/main-bg.png')] 
+    <main className="p-10 ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
       bg-cover bg-center space-y-8 text-[#3B2712] font-serif">
 
       {/* Our Stories Section */}

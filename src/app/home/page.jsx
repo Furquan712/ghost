@@ -1,16 +1,13 @@
 import ReviewCarousel from "@/components/ReviewCarousel";
-import Image from "next/image";
+import Link from "next/link";
 import { FaFacebookSquare } from 'react-icons/fa';
 
 // app/page.js
 export default function Home() {
     return (
-        // Outer div with 20% margin creates a "frame" so the global background is visible around this container.
-        <main className="p-4 ml-[10%] mr-[10%] bg-[url('http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/main-bg.png')] 
-                     bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
-            {/*
-        HEADER SECTION
-      */}
+        <>
+                        <main className="p-4 ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
+                bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
             <section className="text-center mb-10">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Take A Journey Into The Past
@@ -21,6 +18,15 @@ export default function Home() {
                     and discover the spirits that roam among us today.
                 </p>
             </section>
+
+   </main>
+
+         <main className="p-4 ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
+                     bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
+            {/*
+        HEADER SECTION
+      */}
+
 
             {/*
         “T-Shirts” and “NEW! Investigative Ghost Tour” SECTION
@@ -78,12 +84,7 @@ export default function Home() {
                     </div>
                     <div className="mt-6 border-t">
                         <h2 className="mt-6 text-2xl font-bold mb-2">Ghosts In Gatlinburg?</h2>
-                        <iframe
-                            className="w-full h-full"
-                            src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                            title="Ghost Tour Promo Video"
-                            allowFullScreen
-                        />
+                        <iframe width="450" height="275" src="https://www.youtube.com/embed/iY-skp4XrMM?si=99CYEGr2zJbhGEZa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
                     </div>
                     <div className="mt-6 border-t">
                         <h2 className="mt-6 text-2xl font-bold mb-2">Want To Make A Reservation?</h2>
@@ -102,30 +103,46 @@ export default function Home() {
 
                                 $2.00 OFF FOR BOOKING ONLINE Use the code “ghost2off” to get $2.00 off any adult ticket!
                             </p>
-                            <button
-                                className="
-                  bg-[#800]
-                  text-white 
-                  px-4 
-                  py-2 
-                  rounded 
-                  hover:bg-red-800 
-                  transition-colors 
-                  duration-300
+                            <Link
+                type="button"
+                href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
+                className="
+                  inline-block bg-[#800] hover:bg-red-800 text-white
+                  py-2 px-5 rounded shadow-md transition-colors mb-4
                 "
-                            >
-                                BOOK NOW
-                            </button>
+              >
+                BOOK NOW
+              </Link>
                        
+                    </div>
+                    <div className=" flex justify-between mt-6 border-t">
+                        <div className="w-1/2 border-r pr-2 ">
+                        <h2 className="mt-6 text-lg font-bold mb-2">TITANIC!</h2>
+                        <p className="leading-relaxed mb-4">
+                        We are proud to announce that we have been given a special and rare opportunity to do a midnight investigation in the Titanic Museum in Pigeon Forge Tn!
+                        <br/> 
+                        On the night of Friday, July 11th 2025 </p>
+                        </div>
+                        <div className="w-1/2 pl-2 mt-8">
+                         <Link href="https://www.facebook.com/GhostandHauntToursofGatlinburg" target="_blank" rel="noopener noreferrer" className="w-100 text-blue-800 hover:text-blue-900 flex items-center mb-4"><FaFacebookSquare /></Link>
+                        <p className="leading-relaxed mb-4">
+                        “For all the latest exciting news, check our Facebook page!” </p>
+                        </div>
                     </div>
                 </div>
 
             </section>
 
-
-            <section className="text-center">
+        </main>
+                <main className="p-4 ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
+                bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
+                                <section className="text-center">
                 <div className="text-2xl md:text-2xl font-bold ">
                     Trip Advisor Certificate of Excellence! (Now Travelers Choice Awards) & Certificate of Excellence Hall of Fame!
+                </div>
+                <div className=" justify-center mt-4 ">
+                <img src="/Tripadvisor_lockup_horizontal_secondary_registered.png" alt="Trip Advisor Certificate of Excellence" className="w-1/4 h-auto mx-auto mt-4" />
+                    <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-1/4 h-auto mx-auto mt-4" />
                 </div>
                 <p className="text-lg leading-relaxed">
                     Experience our historical ghost tour through the streets of Gatlinburg
@@ -134,7 +151,11 @@ export default function Home() {
                 </p>
                 <ReviewCarousel />
             </section>
-        </main>
+
+   </main>
+        </>
+
+
     );
 }
 
