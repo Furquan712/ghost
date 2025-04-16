@@ -10,9 +10,7 @@ const MapSection = () => {
       <div className="w-full max-w-3xl mx-auto">
         <iframe
           src="https://www.openstreetmap.org/export/embed.html?bbox=-83.5155,35.7345,-83.5055,35.7385&layer=mapnik"
-          width="800"
-          height="500"
-          className="border-none"
+          className="w-full h-full border-none"
           loading="lazy"
           title="Location Map"
         ></iframe>
