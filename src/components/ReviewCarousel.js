@@ -207,11 +207,11 @@ export default function ReviewCarousel() {
       {/* Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50"
           onClick={closeModal}
         >
           <div
-            className="rounded-xl p-5 max-w-lg max-h-[80vh] overflow-y-auto relative"
+            className="rounded-xl bg-yellow-100 p-5 max-w-lg max-h-[80vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             <span
