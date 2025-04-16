@@ -6,10 +6,10 @@ import { FaFacebookSquare } from 'react-icons/fa';
 export default function Home() {
     return (
         <>
-            <main className="p-4 ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
+            <main className="p-4 bg-[url('/main-bg.png')] 
                 bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
-                <section className="text-center mb-10">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                <section className="text-center">
+                    <h1 className="text-4xl text-[#800] md:text-5xl font-bold mb-4">
                         Take A Journey Into The Past
                     </h1>
                     <p className="text-lg leading-relaxed">
@@ -20,7 +20,7 @@ export default function Home() {
                 </section>
 
             </main>
-            <main className="p-4 ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
+            <main className="p-4 bg-[url('/main-bg.png')] 
                      bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
                 {/*
         HEADER SECTION
@@ -35,7 +35,7 @@ export default function Home() {
                     {/* LEFT COLUMN */}
                     <div className="pr-4 lg:border-r-2">
                         <div>
-                            <h2 className="text-2xl font-bold mb-2">NEW! Investigative Ghost Tour!</h2>
+                            <h2 className="text-2xl text-[#800] font-bold mb-2">NEW! Investigative Ghost Tour!</h2>
                             <h2 className="text-2xl font-bold mb-2">Why are we the BEST Ghost Tour in  Town?</h2>
                             <p className="leading-relaxed">
                                 We are the the best value, and the largest, most popular Ghost Tour in Gatlinburg. Why? To start, look at our trip advisor reviews, we have well over 1000 to date. We are the ONLY tour in Gatlinburg to have received Trip Advisor’s Certificate of Excellence (We have now FIVE years in a row!) We use only the best ghost hunting equipment we can find and we give you two options, The Walking Tour and an Extended Investigative Tour!.
@@ -45,7 +45,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="mt-6 border-t">
-                            <h2 className="mt-6 text-2xl font-bold mb-2">Enjoy your Tour? Tip your guide!!</h2>
+                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Enjoy your Tour? Tip your guide!!</h2>
                             <p className="leading-relaxed">
                                 We are so blessed to have some of the best tour guides around! If you had a good time on your tour and you enjoyed your time with your guide, don’t forget to say thank you to your guide by giving them a tip. Like waiters and waitresses they depend on your generosity for much of thier income and as I am sure you will agree, they are the best!
                             </p>
@@ -72,7 +72,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="mt-6 border-t">
-                            <h2 className="mt-6 text-2xl font-bold mb-2">Ghosts In Gatlinburg?</h2>
+                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Ghosts In Gatlinburg?</h2>
                             <iframe className="w-full h-auto" src="https://www.youtube.com/embed/iY-skp4XrMM?si=99CYEGr2zJbhGEZa" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
 
                         </div>
@@ -81,7 +81,7 @@ export default function Home() {
                 </section>
 
             </main>
-            <main className="p-4 ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
+            <main className="p-4 bg-[url('/main-bg.png')] 
                 bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
                 <section className="text-center border-b">
                     <div className="text-2xl md:text-2xl font-bold ">
@@ -96,7 +96,7 @@ export default function Home() {
                         and discover the spirits that roam among us today.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-between">
-                        <div className="w-full sm:w-1/4 justify-center mt-4 items-center">
+                        <div className="w-full sm:w-1/4 justify-center items-center">
                             <img src="/Tripadvisor_lockup_horizontal_secondary_registered.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-20 p-4 sm:w-full" />
 
                             <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-4" />
@@ -108,7 +108,7 @@ export default function Home() {
 
             </main>
 
-            <main className="p-4 ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
+            <main className="p-4 bg-[url('/main-bg.png')] 
                      bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
                 {/*
         HEADER SECTION
@@ -123,7 +123,7 @@ export default function Home() {
                     {/* LEFT COLUMN */}
                     <div className="pr-4 lg:border-r-2">
                         <div className="mt-6 ">
-                            <h2 className="mt-6 text-2xl font-bold mb-2">Want To Make A Reservation?</h2>
+                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Want To Make A Reservation?</h2>
                             <p className="leading-relaxed mb-4">
                                 we will have a very special dinner on the ship with speakers giving us insights and history of the HMS Titanic as well as some tales of mysterious activity there in the Museum itself! Followed by an investigation in the museum of the great ship! Dinner guests will arrive at 9:30 pm, with dinner at 10:00 pm.  Investigation to begin at 11:00pm ending at 2:30 am. For those that wish, we will gather in the parking lot immediately following the investigation for a post investigation discussion regarding any activity we witnessed during the investigation.                        </p>
                             <p className="leading-relaxed mb-4">
@@ -137,7 +137,7 @@ export default function Home() {
                     {/* RIGHT COLUMN */}
                     <div className="">
                         <div className="mt-6">
-                            <h2 className="mt-6 text-2xl font-bold mb-2">Want To Make A Reservation?</h2>
+                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Want To Make A Reservation?</h2>
                             <p className="leading-relaxed mb-4 ">
                                 Click below and make your reservation for your visit to Ghost and Haunt Tours of Gatlinburg, The Ghost Hunting Experience or the Private Tour
                             </p>
@@ -167,7 +167,7 @@ export default function Home() {
                         </div>
                         <div className=" flex flex-col justify-between mt-2 ">
                             <div className="">
-                                <h2 className="mt-6 text-lg font-bold mb-2">TITANIC!</h2>
+                                <h2 className="mt-6 text-[#800] text-lg font-bold mb-2">TITANIC!</h2>
                                 <p className="leading-relaxed mb-4">
                                     We are proud to announce that we have been given a special and rare opportunity to do a midnight investigation in the Titanic Museum in Pigeon Forge Tn!
                                     <br />

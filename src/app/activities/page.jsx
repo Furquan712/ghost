@@ -4,13 +4,12 @@ import Link from "next/link";
 export default function Activities() {
     return (
       <main
-        className="
-ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
-                     bg-cover bg-center p-8 space-y-8 text-[#3B2712] font-serif
+        className="bg-[url('/main-bg.png')] 
+                     bg-cover bg-center text-[#3B2712] font-serif
         "
       >
         {/* Page Title */}
-        <h1 className="text-center text-3xl md:text-4xl font-bold mb-4">
+        <h1 className="text-center text-[#800] text-3xl md:text-4xl font-bold mb-4">
           Ghost and Haunt Tours of Gatlinburg
         </h1>
         <p className="text-center mr-6 ml-6 mb-10">
@@ -43,7 +42,7 @@ ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')]
                 alt="Titanic Dinner and Investigation"
                 className="w-3/4 h-auto object-cover rounded mb-4"
               />
-              <h2 className="text-xl font-semibold mb-2 text-center">
+              <h2 className="text-xl text-[#800] font-semibold mb-2 text-center">
                 TITANIC! Dinner and Investigation.
               </h2>
               <p className="text-center mb-4">
@@ -83,7 +82,7 @@ ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')]
                 alt="Titanic Investigation Only"
                 className="w-3/4 h-auto object-cover rounded mb-4"
               />
-              <h2 className="text-xl font-semibold mb-2 text-center">
+              <h2 className="text-xl text-[#800] font-semibold mb-2 text-center">
                 TITANIC! Investigation only
               </h2>
               <p className="text-center mb-4">
@@ -126,7 +125,7 @@ ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')]
                 alt="Haunted Silhouette"
                 className="w-3/4 h-auto object-cover rounded mb-4"
               />
-              <h2 className="text-xl font-semibold mb-2 text-center">
+              <h2 className="text-xl text-[#800] font-semibold mb-2 text-center">
                 Thrilling Night Walk
               </h2>
               <p className="text-center mb-4">
@@ -166,7 +165,7 @@ ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')]
                 alt="Ghost and Haunt"
                 className="w-3/4 h-auto object-cover rounded mb-4"
               />
-              <h2 className="text-xl font-semibold mb-2 text-center">
+              <h2 className="text-xl text-[#800] font-semibold mb-2 text-center">
                 Ghost and Haunt Special
               </h2>
               <p className="text-center mb-4">

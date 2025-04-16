@@ -52,7 +52,7 @@ export default function Footer() {
   
             {/* Right Column: "Enjoyed Your Tour?" + Book Now */}
             <div>
-              <h2 className="text-3xl font-bold mb-4">Enjoyed your tour? Leave us a review!</h2>
+              <h2 className="text-3xl text-[#800] font-bold mb-4">Enjoyed your tour? Leave us a review!</h2>
               <p className="mb-4 leading-relaxed">
               If you enjoyed your experience on the tour, please leave us a review on Trip Advisor! We try very hard to give all our customers as enjoyable an experience as possible and we would love it if you share that. Have suggestions on making the tour even better? Email us directly at {" "}
                 <a
@@ -62,7 +62,7 @@ export default function Footer() {
                   ghostwalksanta@gmail.com
                 </a>.
               </p>
-              <h2 className="text-2xl font-bold mb-4">BOOK ONLINE - IF YOU DARE!</h2>
+              <h2 className="text-2xl text-[#800] font-bold mb-4">BOOK ONLINE - IF YOU DARE!</h2>
   
               <Link
                 type="button"

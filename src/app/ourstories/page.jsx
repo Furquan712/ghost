@@ -18,12 +18,12 @@ const OurStories = () => {
   }, [galleryItems]);
 
   return (
-    <main className="p-10 ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
-      bg-cover bg-center space-y-8 text-[#3B2712] font-serif">
+    <main className="p-10  bg-[url('/main-bg.png')] 
+      bg-cover bg-center text-[#3B2712] font-serif">
 
       {/* Our Stories Section */}
       <section className="text-center mb-10">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                <h1 className="text-4xl text-[#800] md:text-5xl font-bold mb-4">
                     Frquently Asked Questions
                 </h1>
                 <p className="text-lg leading-relaxed">
@@ -41,7 +41,7 @@ const OurStories = () => {
       </section>
 
       <section className="text-center mb-10">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                <h1 className="text-4xl text-[#800] md:text-5xl font-bold mb-4">
                     Gallery
                 </h1>
             </section>
