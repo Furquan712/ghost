@@ -10,9 +10,22 @@ import Link from "next/link";
 export default function Header() {
   // State to keep track of which tab is active
   const [activeTab, setActiveTab] = useState('Home');
+  const [isClient, setIsClient] = useState(false); // Track if the component is client-side
   const nodeRef = useRef(null);
 
- 
+  const scrollToTop = () => {
+    if (isClient) {
+      window.scrollTo(0, 0); // Scrolls to the top of the page
+    }
+  };
+  
+  useEffect(() => {
+    // Set isClient to true when component has mounted (client-side)
+    setIsClient(true);
+
+    // Scroll to the top when the activeTab changes
+    scrollToTop();
+  }, [activeTab]); // Dependency on activeTab to trigger scroll when it changes
 
   // Function to return the component based on the current active tab
   const renderTabComponent = () => {
