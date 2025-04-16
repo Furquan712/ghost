@@ -60,7 +60,7 @@ export default function Header() {
           
         "
               >
-                <div className='flex flex-col items-center justify-between sm:w-full sm:flex-row mt-8'>
+                <div className='flex flex-col items-center justify-between sm:w-full sm:flex-row'>
                 <div className='invisible'>
                     <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-4" />
                     </div>
@@ -103,7 +103,7 @@ export default function Header() {
                       </nav>
                     </div>
 
-                    <div className='side-header flex flex-col  items-center justify-center  mt-8 mr-8'>
+                    <div className='side-header flex flex-col  items-center justify-center  mt-14 mr-8'>
                       <img
                         src="/tchotel_2020_L-14348-2-removebg-preview.png"
                         alt="Raven"
