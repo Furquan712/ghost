@@ -136,20 +136,26 @@ export default function Home() {
         </main>
                 <main className="p-4 ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
                 bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
-                                <section className="text-center">
+                                <section className="text-center border-b">
                 <div className="text-2xl md:text-2xl font-bold ">
                     Trip Advisor Certificate of Excellence! (Now Travelers Choice Awards) & Certificate of Excellence Hall of Fame!
                 </div>
                 <div className=" justify-center mt-4 ">
-                <img src="/Tripadvisor_lockup_horizontal_secondary_registered.png" alt="Trip Advisor Certificate of Excellence" className="w-1/4 h-auto mx-auto mt-4" />
-                    <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-1/4 h-auto mx-auto mt-4" />
+                    
                 </div>
                 <p className="text-lg leading-relaxed">
                     Experience our historical ghost tour through the streets of Gatlinburg
                     (or your city). Dive into the past, hear tales of haunted legends,
                     and discover the spirits that roam among us today.
                 </p>
-                <ReviewCarousel />
+                <div className="flex justify-between">
+                    <div className="w-1/4 justify-center mt-4 items-center">
+                <img src="/Tripadvisor_lockup_horizontal_secondary_registered.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-20 p-4" />
+
+                    <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-4" />
+
+                        </div>                <ReviewCarousel />
+                </div>
             </section>
 
    </main>
