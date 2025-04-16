@@ -1,16 +1,10 @@
 "use client"
+import FAQ from '@/components/FAQ';
+import MapSection from '@/components/MapSection';
 import React, { useMemo } from 'react'
 
 const OurStories = () => {
   // Sample data for stories
-  const storyItems = [
-    { title: "Story 1", content: "Lorem ipsum dolor sit amet." },
-    { title: "Story 2", content: "Consectetur adipiscing elit." },
-    { title: "Story 3", content: "Sed do eiusmod tempor." },
-    { title: "Story 4", content: "Incididunt ut labore." },
-    { title: "Story 5", content: "Et dolore magna aliqua." },
-    { title: "Story 6", content: "Ut enim ad minim veniam." }
-  ];
 
   // Sample data for gallery images
   const galleryItems = [
@@ -24,13 +18,13 @@ const OurStories = () => {
   }, [galleryItems]);
 
   return (
-    <main className="p-10 ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
+    <main className="p-10 ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
       bg-cover bg-center space-y-8 text-[#3B2712] font-serif">
 
       {/* Our Stories Section */}
       <section className="text-center mb-10">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Our Stories
+                    Frquently Asked Questions
                 </h1>
                 <p className="text-lg leading-relaxed">
                     Experience our historical ghost tour through the streets of Gatlinburg
@@ -39,21 +33,16 @@ const OurStories = () => {
                 </p>
             </section>
 
-      <section className="my-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-          {storyItems.map((story, index) => (
-            <div key={index} className="bg-white bg-opacity-80 rounded-lg overflow-hidden shadow-lg">
-              <div className="p-4">
-                <h3 className="text-xl font-semibold">{story.title}</h3>
-                <p>{story.content}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <section className="my-8 " id='faq'>
+        <FAQ />
       </section>
+      <section className="my-8">
+         <MapSection />
+      </section>
+
       <section className="text-center mb-10">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Gallary
+                    Gallery
                 </h1>
             </section>
 

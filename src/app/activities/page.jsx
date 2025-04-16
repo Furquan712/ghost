@@ -5,7 +5,7 @@ export default function Activities() {
     return (
       <main
         className="
-ml-[15%] mr-[15%] bg-[url('/main-bg.png')] 
+ml-[5%] mr-[5%] sm:ml-[15%] sm:mr-[15%] bg-[url('/main-bg.png')] 
                      bg-cover bg-center p-8 space-y-8 text-[#3B2712] font-serif
         "
       >

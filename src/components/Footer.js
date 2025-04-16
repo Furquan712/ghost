@@ -94,7 +94,7 @@ export default function Footer() {
     {/* Raven Image */}
     <div className="flex mt-6">
       <img
-        src="http://www.dev.causalfunnels.com/wp-content/uploads/2025/04/Screenshot-2025-04-10-002819.png"
+        src="/header-heading.png"
         alt="Raven"
         className="w-100 h-auto"
       />
