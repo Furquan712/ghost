@@ -55,7 +55,7 @@ export default function Header() {
             <div ref={nodeRef} className="tab-content">
               <header
                 className="
-          bg-[url('/main-bg.png')]  sm:bg-[url('/paper-header-1.png')]
+          bg-cover-container bg-[url('/main-bg.png')]  sm:bg-[url('/paper-header-1.png')]
           bg-cover bg-center text-[#800]
           
         "
@@ -65,7 +65,7 @@ export default function Header() {
                     <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-4" />
                     </div>
                     <div className="flex flex-col justify-center items-center">
-                      <div className="">
+                      <div className="p-4">
                         <img
                           src="/header-heading.png"
                           alt="Raven"
