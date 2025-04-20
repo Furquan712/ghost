@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import Home from './home/page';
-import OurStories from './ourstories/page';
-import Activities from './activities/page';
+import Home from '../components/home/page';
+import Explore from '../components/Explore/page';
+import Activities from '../components/activities/page';
 import Link from "next/link";
 
 
@@ -32,8 +32,8 @@ export default function Header() {
     switch (activeTab) {
       case 'Home':
         return <Home />;
-      case 'Our Stories':
-        return <OurStories />;
+      case 'Explore':
+        return <Explore />;
       case 'Activities':
         return <Activities />;
       default:
@@ -91,12 +91,28 @@ export default function Header() {
                               ACTIVITIES
                             </button>
                           </li>
+                          <li className={`${activeTab === 'Explore' ? 'border-b-2 border-[#3B2712]' : ''}`}>
+                            <button
+                              onClick={() => setActiveTab('Explore')}
+                              className="hover:underline focus:outline-none"
+                            >
+                              EXPLORE
+                            </button>
+                          </li>
                           <li className={`${activeTab === 'Our Stories' ? 'border-b-2 border-[#3B2712]' : ''}`}>
                             <button
                               onClick={() => setActiveTab('Our Stories')}
                               className="hover:underline focus:outline-none"
                             >
-                              FAQ
+                              GHOST PROFILE
+                            </button>
+                          </li>
+                          <li className={`${activeTab === 'Our Stories' ? 'border-b-2 border-[#3B2712]' : ''}`}>
+                            <button
+                              onClick={() => setActiveTab('Our Stories')}
+                              className="hover:underline focus:outline-none"
+                            >
+                              BLOGS
                             </button>
                           </li>
                         </ul>
@@ -131,7 +147,7 @@ export default function Header() {
               >
                 {/* Subtext/Phone */}
                 <h3 className="text-center text-sm md:text-base">
-                  GATLINBURG, TENNESSEE – (423) 438-2304
+                  GATLINBURG, TENNESSEE – 865-661-1980
                   <br />
                   BOOK ONLINE BELOW TO RESERVE YOUR TOUR, IF YOU DARE!
                 </h3>
@@ -164,20 +180,13 @@ export default function Header() {
                           className="w-full h-auto"
                         />
                         <p className="mb-4 leading-relaxed">
-                          What secrets lie beyond the pretty shops and the main streets in Gatlinburg?
-                          Step into the past with the Ghost and Haunt Tour of Gatlinburg!
+                        What secrets lie beyond the pretty shops and the main streets in Gatlinburg? Step into the past with Ghost and Haunt Tour of Gatlinburg.
                         </p>
                         <p className="mb-4 leading-relaxed">
-                          Join us in the parking lot next to the Log Cabin Pancake House at
-                          327 Historic Nature Trail (light #7) 7 days a week.
-                          Reservations are required.
+                        Join us in the parking lot next to the Log Cabin Pancake House at 327 Historic Nature Trail (light 8) 7 days a week. Reservations are required.
                         </p>
-                        <p className="mb-4 leading-relaxed">
-                          March 1<sup>st</sup> – October 31<sup>st</sup>: Check in at 8:30 PM; tour leaves at 9:00 PM.
-                          <br />
-                          November 1<sup>st</sup> – December 31<sup>st</sup>: Check in at 7:15 PM; tour leaves by 7:30 PM.
-                          <br />
-                          January and February: Closed.
+                        <p>
+                        March 1st – October 31st, check in is at 8:30 pm and we leave by 9:00 pm. As always, parking is free. November 1st – December 31st check in is at 6:30 pm and we leave by 7:00 pm (winter hours) January and February we are closed.
                         </p>
                         <a
                           href="https://www.tripadvisor.com/"
@@ -193,7 +202,7 @@ export default function Header() {
                       <div>
                         <h2 className="text-3xl text-[#800] font-bold mb-4">Enjoyed your tour? Leave us a review!</h2>
                         <p className="mb-4 leading-relaxed">
-                          If you enjoyed your experience on the tour, please leave us a review on Trip Advisor! We try very hard to give all our customers as enjoyable an experience as possible and we would love it if you share that. Have suggestions on making the tour even better? Email us directly at {" "}
+                        If you enjoyed your experience on the tour, please leave us a review on Trip Advisor! We try very hard to give all our customers as enjoyable an experience as possible and we would love it if you share that. Have suggestions on making the tour even better? Email us directly at {" "}
                           <a
                             href="mailto:ghostwalksanta@gmail.com"
                             className="underline hover:text-red-800 transition-colors"

@@ -45,7 +45,7 @@ export default function Header() {
   
           {/* Subtext/Phone */}
           <div className="mt-4 text-center text-sm md:text-base">
-            GATLINBURG, TENNESSEE – (423) 438-2304
+            GATLINBURG, TENNESSEE – 865-661-1980
             <br />
             BOOK ONLINE BELOW TO RESERVE YOUR TOUR, IF YOU DARE!
           </div>

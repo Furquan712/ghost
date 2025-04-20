@@ -1,6 +1,7 @@
 import ReviewCarousel from "@/components/ReviewCarousel";
 import Link from "next/link";
 import { FaFacebookSquare } from 'react-icons/fa';
+import HeroHome from "../HeroHome";
 
 // app/page.js
 export default function Home() {
@@ -8,16 +9,9 @@ export default function Home() {
         <>
             <main className="p-4 bg-[url('/main-bg.png')] 
                 bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
-                <section className="text-center">
-                    <h1 className="text-4xl text-[#800] md:text-5xl font-bold mb-4">
-                        Take A Journey Into The Past
-                    </h1>
-                    <p className="text-lg leading-relaxed">
-                        Experience our historical ghost tour through the streets of Gatlinburg
-                        (or your city). Dive into the past, hear tales of haunted legends,
-                        and discover the spirits that roam among us today.
-                    </p>
-                </section>
+                    <section>
+                        <HeroHome />
+                    </section>
 
             </main>
             <main className="p-4 bg-[url('/main-bg.png')] 
