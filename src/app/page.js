@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import Home from '../components/home/page';
-import Explore from '../components/Explore/page';
+import Explore from '../components/explore/page';
 import Activities from '../components/activities/page';
 import Link from "next/link";
 import Ghost from '@/components/ghost/page';
