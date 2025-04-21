@@ -16,15 +16,6 @@ export default function Home() {
             </main>
             <main className="p-4 bg-[url('/main-bg.png')] 
                      bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
-                {/*
-        HEADER SECTION
-      */}
-
-
-                {/*
-        “T-Shirts” and “NEW! Investigative Ghost Tour” SECTION
-        On wider screens, display side by side.
-      */}
                 <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0 border-t border-b p-4">
                     {/* LEFT COLUMN */}
                     <div className="pr-4 lg:border-r-2">
@@ -65,11 +56,6 @@ export default function Home() {
 
                             </p>
                         </div>
-                        <div className="mt-6 border-t">
-                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Ghosts In Gatlinburg?</h2>
-                            <iframe className="w-full h-auto" src="https://www.youtube.com/embed/iY-skp4XrMM?si=99CYEGr2zJbhGEZa" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-
-                        </div>
                     </div>
 
                 </section>
@@ -104,15 +90,7 @@ export default function Home() {
 
             <main className="p-4 bg-[url('/main-bg.png')] 
                      bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
-                {/*
-        HEADER SECTION
-      */}
-
-
-                {/*
-        “T-Shirts” and “NEW! Investigative Ghost Tour” SECTION
-        On wider screens, display side by side.
-      */}
+                 
                 <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0  border-b p-4">
                     {/* LEFT COLUMN */}
                     <div className="pr-4 lg:border-r-2">
@@ -130,48 +108,10 @@ export default function Home() {
 
                     {/* RIGHT COLUMN */}
                     <div className="">
-                        <div className="mt-6">
-                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Want To Make A Reservation?</h2>
-                            <p className="leading-relaxed mb-4 ">
-                                Click below and make your reservation for your visit to Ghost and Haunt Tours of Gatlinburg, The Ghost Hunting Experience or the Private Tour
-                            </p>
-                            <p className="leading-relaxed font-bold text-center">
-                                Everyday at 9:00 pm check in at 8:30 pm | Adults: $25 plus tax | Children 12 and under $15 plus tax
-                            </p>
-                            <br />
-                            <p className="leading-relaxed mb-4">
-                                November and December start times are 7:00 pm with 6:30 check in, Closed January and February.
-                            </p>
-                            <p className="leading-relaxed mb-4">
+                    <div className="mt-6">
+                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Ghosts In Gatlinburg?</h2>
+                            <iframe className="w-full h-auto" src="https://www.youtube.com/embed/iY-skp4XrMM?si=99CYEGr2zJbhGEZa" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
 
-
-                                $2.00 OFF FOR BOOKING ONLINE Use the code “ghost2off” to get $2.00 off any adult ticket!
-                            </p>
-                            <Link
-                                type="button"
-                                href="https://checkout.xola.app/index.html#buttons/5ad4ba23cf8b9cec3a8b4607?cache=1617135314631&openExternal=true&xwm=eyJvcmlnaW4iOiJodHRwczovL2dob3N0YW5kaGF1bnQuY29tIiwiY2hhbm5lbCI6ImdteWxlZ3J6aWFNcFhlT0QifQ~~"
-                                className="
-                  inline-block bg-[#800] hover:bg-red-800 text-white
-                  py-2 px-5 rounded shadow-md transition-colors mb-4
-                "
-                            >
-                                BOOK NOW
-                            </Link>
-
-                        </div>
-                        <div className=" flex flex-col justify-between mt-2 ">
-                            <div className="">
-                                <h2 className="mt-6 text-[#800] text-lg font-bold mb-2">TITANIC!</h2>
-                                <p className="leading-relaxed mb-4">
-                                    We are proud to announce that we have been given a special and rare opportunity to do a midnight investigation in the Titanic Museum in Pigeon Forge Tn!
-                                    <br />
-                                    On the night of Friday, July 11th 2025 </p>
-                            </div>
-                            <div className="flex justify-start gap-2  mt-8">
-                                <Link href="https://www.facebook.com/GhostandHauntToursofGatlinburg" target="_blank" rel="noopener noreferrer" className=" text-3xl text-blue-800 hover:text-blue-900 flex items-center mb-4"><FaFacebookSquare /></Link>
-                                <p className="leading-relaxed mb-4">
-                                    “For all the latest exciting news, check our Facebook page!” </p>
-                            </div>
                         </div>
                     </div>
 

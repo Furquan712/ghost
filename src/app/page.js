@@ -5,6 +5,7 @@ import Home from '../components/home/page';
 import Explore from '../components/Explore/page';
 import Activities from '../components/activities/page';
 import Link from "next/link";
+import Ghost from '@/components/ghost/page';
 
 
 export default function Header() {
@@ -36,6 +37,8 @@ export default function Header() {
         return <Explore />;
       case 'Activities':
         return <Activities />;
+      case 'Ghost Profile':
+        return <Ghost />;  
       default:
         return null;
     }
@@ -99,22 +102,15 @@ export default function Header() {
                               EXPLORE
                             </button>
                           </li>
-                          <li className={`${activeTab === 'Our Stories' ? 'border-b-2 border-[#3B2712]' : ''}`}>
+                          <li className={`${activeTab === 'Ghost Profile' ? 'border-b-2 border-[#3B2712]' : ''}`}>
                             <button
-                              onClick={() => setActiveTab('Our Stories')}
+                              onClick={() => setActiveTab('Ghost Profile')}
                               className="hover:underline focus:outline-none"
                             >
                               GHOST PROFILE
                             </button>
                           </li>
-                          <li className={`${activeTab === 'Our Stories' ? 'border-b-2 border-[#3B2712]' : ''}`}>
-                            <button
-                              onClick={() => setActiveTab('Our Stories')}
-                              className="hover:underline focus:outline-none"
-                            >
-                              BLOGS
-                            </button>
-                          </li>
+ 
                         </ul>
                       </nav>
                     </div>
@@ -250,9 +246,9 @@ export default function Header() {
                       {/* Navigation */}
                     </div>
                     <div className='flex items-center justify-center p-8 sm:p-4'>
-                      <div className={`${activeTab === 'Our Stories' ? ' border-[#3B2712]' : ''}`}>
+                      <div className={`${activeTab === 'Explore' ? ' border-[#3B2712]' : ''}`}>
                         <button
-                          onClick={() => setActiveTab('Our Stories')}
+                          onClick={() => setActiveTab('Explore')}
                           className="
                             bg-yellow-500 hover:bg-yellow-600 text-[#3B2712]
                             px-6 py-2 rounded shadow-md transition-colors
