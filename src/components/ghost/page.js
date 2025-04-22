@@ -18,8 +18,10 @@ const Ghost = () => {
                     
                   <div className="max-w-7xl mx-auto px-4">
                     <h1 className="text-4xl text-[#800] font-bold mb-4 flex justify-center items-center">Featured Ghost Profiles</h1>
-                    <p className="mb-4 text-center text-lg">Meet a selection of famed spirits whose eerie tales have stood the test of time. Each profile offers a quick glimpse into their origin, memorable encounters, and the legends that keep them haunting our imaginations.</p>
-                    {/* Two-column layout on larger screens */}
+                    <p className="text-lg text-center leading-relaxed  ">
+          Experience our historical ghost tour through the streets of Gatlinburg. Dive into the past, hear tales of haunted legends,
+          and discover the spirits that roam among us today.
+        </p>
                     <div className="grid md:grid-cols-2 gap-8">
                       {/* Left Column: "Schedule a Tour" */}
                       <div>

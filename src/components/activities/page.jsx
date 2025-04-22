@@ -5,7 +5,7 @@ export default function Activities() {
     return (
       <main
         className="bg-[url('/main-bg.png')] 
-                     bg-cover bg-center text-[#3B2712] font-serif
+                     bg-cover bg-center text-[#3B2712] font-serif px-8
         "
       >
         {/* Page Title */}
@@ -17,7 +17,7 @@ export default function Activities() {
         </p>
   
         {/* Cards Container */}
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto ">
           {/* First Row (2 cards) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Card 1 */}

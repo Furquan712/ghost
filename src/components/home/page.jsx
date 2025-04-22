@@ -7,16 +7,16 @@ import HeroHome from "../HeroHome";
 export default function Home() {
     return (
         <>
-            <main className="p-4 bg-[url('/main-bg.png')] 
+            <main className="px-8 bg-[url('/main-bg.png')] 
                 bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
                     <section>
                         <HeroHome />
                     </section>
 
             </main>
-            <main className="p-4 bg-[url('/main-bg.png')] 
+            <main className="px-8 bg-[url('/main-bg.png')] 
                      bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
-                <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0 border-t border-b p-4">
+                <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0 border-t border-b ">
                     {/* LEFT COLUMN */}
                     <div className="pr-4 lg:border-r-2">
                         <div>
@@ -61,7 +61,7 @@ export default function Home() {
                 </section>
 
             </main>
-            <main className="p-4 bg-[url('/main-bg.png')] 
+            <main className=" px-8 bg-[url('/main-bg.png')] 
                 bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
                 <section className="text-center border-b">
                     <div className="text-2xl md:text-2xl font-bold ">
@@ -77,7 +77,7 @@ export default function Home() {
                     </p>
                     <div className="flex flex-col sm:flex-row justify-between">
                         <div className="w-full sm:w-1/4 justify-center items-center">
-                            <img src="/Tripadvisor_lockup_horizontal_secondary_registered.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-20 p-4 sm:w-full" />
+                            <img src="/Tripadvisor_lockup_horizontal_secondary_registered.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-20  sm:w-full" />
 
                             <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-4" />
 
@@ -88,10 +88,10 @@ export default function Home() {
 
             </main>
 
-            <main className="p-4 bg-[url('/main-bg.png')] 
+            <main className="px-8 bg-[url('/main-bg.png')] 
                      bg-cover bg-center  space-y-8 text-[#3B2712] font-serif">
                  
-                <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0  border-b p-4">
+                <section className="md:grid md:grid-cols-2 md:gap-8 space-y-8 md:space-y-0  border-b ">
                     {/* LEFT COLUMN */}
                     <div className="pr-4 lg:border-r-2">
                         <div className="mt-6 ">
