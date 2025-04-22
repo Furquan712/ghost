@@ -21,9 +21,9 @@ const Explore = () => {
 
   return (
     <main className="bg-[url('/main-bg.png')] 
-      bg-cover bg-center text-[#3B2712] font-serif">
+      bg-cover bg-center text-[#3B2712] font-serif px-8">
         <section>
-        <div className=" flex flex-col items-center justify-center gap-2 p-4">
+        <div className=" flex flex-col items-center justify-center gap-2 pb-4">
                             <h2 className="mt-6 text-[#800] text-3xl font-bold mb-2">Want To Make A Reservation?</h2>
                             <p className="leading-relaxed text-center mb-4 ">
                                 Click below and make your reservation for your visit to Ghost and Haunt Tours of Gatlinburg, The Ghost Hunting Experience or the Private Tour
@@ -53,7 +53,7 @@ const Explore = () => {
 
                         </div>
         </section>
-        <section className="text-center p-4">
+        <section className="text-center ">
             <h1 className="text-4xl text-[#800] md:text-5xl font-bold">
                 Special Events
             </h1>
@@ -67,7 +67,7 @@ const Explore = () => {
         </section>
 
       {/* Our Stories Section */}
-      <section className="text-center p-4">
+      <section className="text-center pb-4 ">
                 <h1 className="text-4xl text-[#800] md:text-5xl font-bold mb-4">
                     Frquently Asked Questions
                 </h1>
@@ -78,10 +78,10 @@ const Explore = () => {
                 </p>
             </section>
 
-      <section className="mx-8 " id='faq'>
+      <section className="pb-4 " id='faq'>
         <FAQ />
       </section>
-      <section className="mx-8">
+      <section className="pb-4">
          <MapSection />
       </section>
 
@@ -92,7 +92,7 @@ const Explore = () => {
             </section>
 
       {/* Gallery Section with Random Vertical Alignment */}
-      <section className="mx-8">
+      <section className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {galleryItems.map((image, index) => (
             <div
