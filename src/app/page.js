@@ -47,7 +47,7 @@ export default function Header() {
   return (
     <>
       {/* Container for 3D perspective */}
-      <div className="tab-content-container">
+      <div className="tab-content-container px-4">
         <SwitchTransition mode="out-in">
           <CSSTransition
             key={activeTab}
@@ -68,7 +68,7 @@ export default function Header() {
                     <img src="/tchotel_2020_L-14348-2-removebg-preview.png" alt="Trip Advisor Certificate of Excellence" className="w-full h-auto mx-auto mt-4" />
                     </div>
                     <div className="flex flex-col justify-center items-center">
-                      <div className="p-4">
+                      <div className="">
                         <img
                           src="/header-heading.png"
                           alt="Raven"
@@ -138,7 +138,7 @@ export default function Header() {
               <main
                 className="
                   bg-[url('/main-bg.png')] 
-                     bg-cover bg-center text-[#3B2712] font-serif p-4
+                     bg-cover bg-center text-[#3B2712] font-serif 
         "
               >
                 {/* Subtext/Phone */}
@@ -159,10 +159,9 @@ export default function Header() {
                   className="
           bg-[url('/main-bg.png')]
           bg-cover bg-center 
-          text-[#3B2712] font-serif
+          text-[#3B2712] font-serif px-2
          
-
-          p-10
+ 
         "
                 >
                   <div className="max-w-7xl mx-auto px-4">
@@ -227,9 +226,8 @@ export default function Header() {
                   className="
           bg-[url('/bird-paper2.png')]
           bg-cover bg-center 
-          text-[#3B2712] font-serif
-          p-8
-        "
+          text-[#3B2712] font-serif px-2 pb-16
+         "
                 >
                   <div className="max-w-5xl">
 
@@ -245,7 +243,7 @@ export default function Header() {
                       </div>
                       {/* Navigation */}
                     </div>
-                    <div className='flex items-center justify-center p-8 sm:p-4'>
+                    <div className='flex items-center justify-center  sm:p-4'>
                       <div className={`${activeTab === 'Explore' ? ' border-[#3B2712]' : ''}`}>
                         <button
                           onClick={() => setActiveTab('Explore')}
