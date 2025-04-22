@@ -107,13 +107,20 @@ export default function Home() {
                     </div>
 
                     {/* RIGHT COLUMN */}
-                    <div className="">
+                     
                     <div className="mt-6">
-                            <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Ghosts In Gatlinburg?</h2>
-                            <iframe className="w-full h-auto" src="https://www.youtube.com/embed/iY-skp4XrMM?si=99CYEGr2zJbhGEZa" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+  <h2 className="mt-6 text-[#800] text-2xl font-bold mb-2">Ghosts In Gatlinburg?</h2>
+  <iframe
+    className="w-full h-[250px]"
+    src="https://www.youtube.com/embed/iY-skp4XrMM?autoplay=1&mute=1&si=99CYEGr2zJbhGEZa"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
 
-                        </div>
-                    </div>
 
                 </section>
 
